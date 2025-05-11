@@ -3,12 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetMediator", "src\NetMediator\NetMediator.csproj", "{B86ECFE5-44A3-42AB-BF69-1A5AD3A392DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{8B4BB054-625E-4522-BDBC-8B3D807CCA27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "samples\WebAPI\WebAPI.csproj", "{5FE52F81-0C4F-412F-99EF-639EEC1F824B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B86ECFE5-44A3-42AB-BF69-1A5AD3A392DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B86ECFE5-44A3-42AB-BF69-1A5AD3A392DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B86ECFE5-44A3-42AB-BF69-1A5AD3A392DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B86ECFE5-44A3-42AB-BF69-1A5AD3A392DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FE52F81-0C4F-412F-99EF-639EEC1F824B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FE52F81-0C4F-412F-99EF-639EEC1F824B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FE52F81-0C4F-412F-99EF-639EEC1F824B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FE52F81-0C4F-412F-99EF-639EEC1F824B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B86ECFE5-44A3-42AB-BF69-1A5AD3A392DC} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{5FE52F81-0C4F-412F-99EF-639EEC1F824B} = {8B4BB054-625E-4522-BDBC-8B3D807CCA27}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC956791-0B4A-4EFA-BE9E-0CDA52011E15}
 	EndGlobalSection
 EndGlobal
