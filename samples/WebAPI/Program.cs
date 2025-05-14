@@ -1,10 +1,13 @@
 using NetMediator;
 using System.Reflection;
 using System.Reflection.Metadata;
+using WebAPI.Behaviors;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddNetMediator(Assembly.GetExecutingAssembly());
+
+builder.Services.AddScoped(typeof(IPipelineBehavior<,>), typeof(RequestLoggingPipelineBehavior<,>));
 
 var app = builder.Build();
 
